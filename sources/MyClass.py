@@ -1,20 +1,16 @@
-import re
+
 
 class FirstPage:
     def __init__(self):
-        self.project_info = ""
-        self.address = ""
-        self.client = ""
-        self.date = ""
-        self.lot_cfc = ""
         self.total_brut = 0.0
         self.prorata = 0.0
         self.total_hors_tva = 0.0
+        self.tva_p = 0.0
         self.tva = 0.0
         self.total_ttc = 0.0
     
     def __repr__(self):
-        return f"FirstPage(total_brut={self.total_brut}, prorata={self.prorata}, total_hors_tva={self.total_hors_tva}, tva={self.tva}, total_ttc={self.total_ttc})"
+        return f"FirstPage(total_brut={self.total_brut}, prorata={self.prorata}, total_hors_tva={self.total_hors_tva}, tva={self.tva}, tva_p={self.tva_p} total_ttc={self.total_ttc})"
 
 class LastPage:
     def __init__(self):

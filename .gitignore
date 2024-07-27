@@ -36,5 +36,6 @@ dist
 build
 main.spec
 
-"Soumission_Cerutti Toitures SA.pdf"
-"Soumission_Etico SA.pdf"
+*.pdf
+
+sources/__pycache__

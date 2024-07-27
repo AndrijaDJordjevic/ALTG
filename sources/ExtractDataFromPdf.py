@@ -3,7 +3,7 @@ import re
 import argparse
 
 def debug(pages_text):
-    #Print the results
+
     for page_number, page_text in enumerate(pages_text):
         print(f"--- Page {page_number + 1} ---\n{page_text}\n")
 

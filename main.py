@@ -1,5 +1,5 @@
 import sources.ParseFolderInformation as pfi
-import sources.MyPdfParser as mpp
+import sources.ExtractDataFromPdf as mpp
 import sources.ParseAndStruct as pas
 
 import time
@@ -20,11 +20,9 @@ def main_loop():
         pages_text = mpp.extract_data_from_pdf(path, debugState)
         
         #parse and set all data to class (struct)
-        first_page, middle_pages, last_page = pas.ParseAndStructPagesText(pages_text, debugState)
+        first_page = pas.ParseAndStructPagesText(pages_text, debugState)
         
-
         index += 1
-        print("--------------------------------------------------------------------------")
     
 
 def main():
